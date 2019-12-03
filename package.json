@@ -1,0 +1,26 @@
+{
+  "name": "javascript-project-template",
+  "version": "1.0.0",
+  "description": "Using NodeJS, ExpressJS, Apollo Server/Client, MongoDB, ReactJS",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gurolayanlar/javascript-project-template.git"
+  },
+  "keywords": ["NodeJS", "ExpressJS", "Apollo Server", "Apollo Client", "MongoDB","ReactJS"],
+  "author": "Gürol Ayanlar <gurolayanlar@gmail.com>",
+  "contributors": [
+    {
+      "name": "Özgün Özdemir",
+      "email": "ozgunozdemir92@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gurolayanlar/javascript-project-template/issues"
+  },
+  "homepage": "https://github.com/gurolayanlar/javascript-project-template#readme"
+}
