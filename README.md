@@ -1,2 +1,2 @@
 # Javascript Project Template
-Using NodeJS, GraphQL, ExpressJS, Apollo Server/Client, MongoDB, ReactJS
+Using NodeJS, ExpressJS, GraphQL, Apollo Server/Client, MongoDB, ReactJS
