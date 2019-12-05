@@ -1,16 +1,27 @@
 {
   "name": "javascript-project-template",
   "version": "1.0.0",
-  "description": "Using NodeJS, ExpressJS, Apollo Server/Client, MongoDB, ReactJS",
+  "description": "Using NodeJS, ExpressJS, GraphQL, Apollo Server/Client, MongoDB, ReactJS",
   "main": "server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "debug": "concurrently \"nodemon --inspect-brk server\" \"node client/ start\"",
+    "start": "concurrently \"nodemon server/\" \"node client/ start\"",
+    "build": "node client build",
+    "prepare": "node client install"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gurolayanlar/javascript-project-template.git"
   },
-  "keywords": ["NodeJS", "ExpressJS", "Apollo Server", "Apollo Client", "MongoDB","ReactJS"],
+  "keywords": [
+    "NodeJS",
+    "ExpressJS",
+    "GraphQL",
+    "Apollo Server",
+    "Apollo Client",
+    "MongoDB",
+    "ReactJS"
+  ],
   "author": "Gürol Ayanlar <gurolayanlar@gmail.com>",
   "contributors": [
     {
@@ -22,5 +33,27 @@
   "bugs": {
     "url": "https://github.com/gurolayanlar/javascript-project-template/issues"
   },
-  "homepage": "https://github.com/gurolayanlar/javascript-project-template#readme"
+  "homepage": "https://github.com/gurolayanlar/javascript-project-template#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "connect-redis": "^4.0.3",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "helmet": "^3.21.2",
+    "lodash": "^4.17.15",
+    "method-override": "^3.0.0",
+    "moment": "^2.24.0",
+    "mongoose": "^5.7.13",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "redis": "^2.8.0",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^4.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "nodemon": "^2.0.1"
+  }
 }
