@@ -17,6 +17,18 @@ const redis = require("./config/redis");
 
 const app = express();
 
+const { ApolloServer } = require('apollo-server-express');
+const { importSchema } = require('graphql-import');
+
+const resolvers = require('./graphql/resolvers/index');
+
+const server = new ApolloServer({
+    typeDefs: importSchema('./server/graphql/types/schema.graphql'),
+    resolvers
+  });
+  
+  server.applyMiddleware({ app });
+
 if (config.env !== "development") {
   app.set("trust proxy", 1);
   app.use(morgan("tiny"));
