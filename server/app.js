@@ -20,11 +20,19 @@ const app = express();
 const { ApolloServer } = require('apollo-server-express');
 const { importSchema } = require('graphql-import');
 
+//models
+const User = require('./models/User');
+const Customer = require('./models/Customer');
+
 const resolvers = require('./graphql/resolvers/index');
 
 const server = new ApolloServer({
-    typeDefs: importSchema('./server/graphql/types/schema.graphql'),
-    resolvers
+    typeDefs: importSchema('./server/graphql/schema.graphql'),
+    resolvers,
+    context: {
+      User,
+      Customer
+    }
   });
   
   server.applyMiddleware({ app });
