@@ -5,7 +5,7 @@ type Query {
 
 type Order {
     id: ID!
-    date: Date!
+    date: String!
     status: String!
     comments: String!
     details: String!

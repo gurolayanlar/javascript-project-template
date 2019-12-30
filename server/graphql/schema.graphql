@@ -1,3 +1,11 @@
 # import Query from './types/User.graphql'
 
 # import Query from './types/Customer.graphql'
+
+# import Query from './types/Product.graphql'
+
+# import Query from './types/Category.graphql'
+
+# import Query from './types/Order.graphql'
+
+# import Query from './types/Payment.graphql'
