@@ -1,0 +1,12 @@
+type Query {
+    order(id: ID!): Order!,
+    orders: [Order!]!
+}
+
+type Order {
+    id: ID!
+    date: Date!
+    status: String!
+    comments: String!
+    details: String!
+}

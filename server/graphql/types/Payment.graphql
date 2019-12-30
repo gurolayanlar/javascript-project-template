@@ -1,0 +1,11 @@
+type Query {
+    payment(id: ID!): Payment!,
+    payments: [Payment!]!
+}
+
+type Payment {
+    id: ID!
+    date: Date!
+    amount: String!
+    orders: [Order]!
+}
