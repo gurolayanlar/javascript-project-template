@@ -10,3 +10,15 @@ type User {
     email: String!
     role: String
 }
+
+type Mutation {
+    createUser(data: CreateUserInput!): User
+}
+
+input CreateUserInput{
+    firstName: String!
+    lastName: String!
+    email: String!
+    password: String!
+    role: String
+}
