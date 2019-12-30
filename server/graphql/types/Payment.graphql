@@ -5,7 +5,7 @@ type Query {
 
 type Payment {
     id: ID!
-    date: Date!
+    date: String!
     amount: String!
     orders: [Order]!
 }

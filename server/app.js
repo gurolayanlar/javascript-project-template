@@ -23,6 +23,10 @@ const { importSchema } = require('graphql-import');
 //models
 const User = require('./models/User');
 const Customer = require('./models/Customer');
+const Product = require('./models/Product');
+const Category = require('./models/Category');
+const Order = require('./models/Order');
+const Payment = require('./models/Payment');
 
 const resolvers = require('./graphql/resolvers/index');
 
@@ -31,7 +35,11 @@ const server = new ApolloServer({
     resolvers,
     context: {
       User,
-      Customer
+      Customer,
+      Product,
+      Category,
+      Order,
+      Payment
     }
   });
   

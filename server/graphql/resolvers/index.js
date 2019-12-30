@@ -1,6 +1,12 @@
 const Query = require('./queries/Query');
+const Category = require('./queries/Category');
+const Payment = require('./queries/Payment');
+const Product = require('./queries/Product');
 
 
 module.exports = {
-    Query
+    Query,
+    Category,
+    Payment,
+    Product
 }
