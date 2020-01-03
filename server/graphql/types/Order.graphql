@@ -8,5 +8,16 @@ type Order {
     date: String!
     status: String!
     comments: String!
-    details: String!
+    details: [String]!
+}
+
+type Mutation {
+    createOrder(data: CreateOrderInput! ): Order
+}
+
+input CreateOrderInput {
+    date: String!
+    status: String!
+    comments: String!
+    details: [String]!
 }

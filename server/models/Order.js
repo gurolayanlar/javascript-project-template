@@ -6,8 +6,8 @@ const OrderSchema = new Schema({
     comments: String,
     date: Date,
     details: [{
-        count: Number,
-        productCode: Number
+        count: String,
+        productCode: String
     }]
 })
 

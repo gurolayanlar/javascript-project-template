@@ -2,11 +2,14 @@
 # import Mutation from './types/User.graphql'
 
 # import Query from './types/Customer.graphql'
+# import Mutation from './types/Customer.graphql'
 
 # import Query from './types/Product.graphql'
+# import Mutation from './types/Product.graphql'
 
 # import Query from './types/Category.graphql'
 
 # import Query from './types/Order.graphql'
+# import Mutation from './types/Order.graphql'
 
 # import Query from './types/Payment.graphql'

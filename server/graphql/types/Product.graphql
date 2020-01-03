@@ -11,3 +11,14 @@ type Product {
     price: String!,
     category: Category!,
 }
+
+type Mutation {
+    addProduct(data: addProductInput!): Product
+}
+
+input addProductInput {
+    name: String!
+    code: String!
+    description: String!
+    price: String!
+}

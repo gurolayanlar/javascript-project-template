@@ -8,8 +8,22 @@ type Customer {
     firstName: String!
     lastName: String!
     email: String!
-    phoneNumber: String!,
-    address: String,
-    city: String,
+    phoneNumber: String!
+    address: String
+    city: String
+    country: String
+}
+
+type Mutation {
+    addCustomer(data: AddCustomerInput! ): Customer
+}
+
+input AddCustomerInput {
+    firstName: String!
+    lastName: String!
+    email: String!
+    phoneNumber: String!
+    address: String
+    city: String
     country: String
 }
