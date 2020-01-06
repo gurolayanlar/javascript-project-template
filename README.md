@@ -25,7 +25,7 @@ Copyright © 2019. This source code is licensed under the MIT license found in t
 [LICENSE.txt][license] file.
 
 ---
-Made with by Gürol Ayanlar ([@gurolayanlar](https://twitter.com/gurolayanlar) and Özgün Özdemir ([@ozgunozdemir](https://twitter.com/@OzdmrOzgn))
+Made with by Gürol Ayanlar ([@gurolayanlar](https://twitter.com/gurolayanlar)) and Özgün Özdemir ([@ozgunozdemir](https://twitter.com/@OzdmrOzgn))
 
 [node]: https://nodejs.org
 [gql]: https://graphql.org
