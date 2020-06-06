@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/gurolayanlar/javascript-project-template#readme",
   "dependencies": {
-    "apollo-server-express": "^2.9.12",
+    "apollo-server-express": "^2.14.2",
     "compression": "^1.7.4",
     "connect-redis": "^4.0.3",
     "cookie-parser": "^1.4.4",
